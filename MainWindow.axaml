@@ -1,0 +1,86 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DuckSimulator.MainWindow"
+        Title="Duck Simulator - Inheritance Pattern"
+        Width="600" Height="450"
+        Background="#F5F5F5">
+    
+    <StackPanel Margin="30" Spacing="20">
+        <TextBlock Text="🦆 Ducks in the pond"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+        
+        <Border Background="White"
+                CornerRadius="8"
+                Padding="20"
+                BoxShadow="0 2 10 0 #20000000">
+            <StackPanel Spacing="15">
+                <TextBlock Text="Select a Duck Type:"
+                           FontSize="16"
+                           FontWeight="SemiBold"/>
+                
+                <ComboBox Name="DuckSelector"
+                          SelectionChanged="OnDuckSelectionChanged"
+                          MinWidth="200"
+                          FontSize="14"/>
+                
+                <TextBlock Name="DisplayText"
+                           Text=""
+                           FontSize="18"
+                           TextWrapping="Wrap"
+                           Margin="0,10,0,0"
+                           Foreground="#2C5F2D"/>
+            </StackPanel>
+        </Border>
+        
+        <Border Background="White"
+                CornerRadius="8"
+                Padding="20"
+                BoxShadow="0 2 10 0 #20000000">
+            <StackPanel Spacing="15">
+                <TextBlock Text="Duck Actions:"
+                           FontSize="16"
+                           FontWeight="SemiBold"/>
+                
+                <UniformGrid Columns="3" Rows="1" HorizontalAlignment="Stretch">
+                    <Button Content="Quack 🔊"
+                            Click="OnQuackClick"
+                            Margin="0,0,5,0"
+                            Padding="15,10"
+                            FontSize="14"/>
+                    
+                    <Button Content="Swim 🌊"
+                            Click="OnSwimClick"
+                            Margin="5,0,5,0"
+                            Padding="15,10"
+                            FontSize="14"/>
+                    
+                    <Button Content="Display 👀"
+                            Click="OnDisplayClick"
+                            Margin="5,0,0,0"
+                            Padding="15,10"
+                            FontSize="14"/>
+                </UniformGrid>
+                
+                <Border Background="#F0F8FF"
+                        CornerRadius="4"
+                        Padding="15"
+                        Margin="0,10,0,0">
+                    <TextBlock Name="OutputText"
+                               Text="Click a button to perform an action"
+                               FontSize="14"
+                               TextAlignment="Center"
+                               Foreground="#666"/>
+                </Border>
+            </StackPanel>
+        </Border>
+        
+        <TextBlock Text="💡 Note: The display() method is abstract in the base Duck class. Each subtype implements its own version!"
+                   FontSize="12"
+                   TextWrapping="Wrap"
+                   Foreground="#666"
+                   FontStyle="Italic"/>
+    </StackPanel>
+</Window>
