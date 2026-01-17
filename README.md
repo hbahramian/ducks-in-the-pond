@@ -1,6 +1,6 @@
 # Duck Simulator - Avalonia Desktop App
 
-This project demonstrates object-oriented inheritance patterns using a Duck class hierarchy.
+This project demonstrates object-oriented strategy pattern using a Duck class hierarchy.
 
 ## Running in VS Code Dev Container
 
