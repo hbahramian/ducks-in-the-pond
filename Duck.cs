@@ -17,5 +17,8 @@ namespace DuckSimulator
 
         // Abstract method - each subtype must implement
         public abstract string Display();
+        
+        // Get the emoji representation of the duck
+        public abstract string GetEmoji();
     }
 }

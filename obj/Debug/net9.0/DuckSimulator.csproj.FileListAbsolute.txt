@@ -62,3 +62,4 @@
 /workspaces/DuckSimulator/obj/Debug/net9.0/DuckSimu.3D14728E.Up2Date
 /workspaces/DuckSimulator/obj/Debug/net9.0/DuckSimulator.genruntimeconfig.cache
 /workspaces/DuckSimulator/obj/Debug/net9.0/ref/DuckSimulator.dll
+/workspaces/DuckSimulator/obj/Debug/net9.0/DuckSimulator.sourcelink.json

@@ -6,5 +6,10 @@ namespace DuckSimulator
         {
             return "🦆 I'm a Mallard Duck - green head, brown body!";
         }
+        
+        public override string GetEmoji()
+        {
+            return "🦆";
+        }
     }
 }

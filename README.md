@@ -1,6 +1,12 @@
 # Duck Simulator - Avalonia Desktop App
 
-This project demonstrates object-oriented strategy pattern using a Duck class hierarchy.
+This project demonstrates object-oriented strategy pattern using a Duck class hierarchy with animated swimming and quacking!
+
+## Features
+- 🦆 Animated ducks swimming in a pond
+- 💬 Random quacking with speech bubbles
+- 🎨 Different duck types with unique behaviors
+- 🌊 Smooth animation with bouncing off pond edges
 
 ## Running in VS Code Dev Container
 
@@ -12,6 +18,7 @@ This project demonstrates object-oriented strategy pattern using a Duck class hi
 6. In the virtual desktop, open terminal and run:
    ```bash
    cd /workspaces/DuckSimulator
+   export DISPLAY=:1
    dotnet run
    ```
 
@@ -21,8 +28,15 @@ This project demonstrates object-oriented strategy pattern using a Duck class hi
   - quack() - all ducks can quack
   - swim() - all ducks can swim
   - display() - abstract method, each subtype implements
+  - getEmoji() - returns the emoji for the duck
 
-- **MallardDuck** - implements display() for mallard appearance
-- **RedheadDuck** - implements display() for redhead appearance
-- **RubberDuck** - implements display() + overrides swim()
-- **DecoyDuck** - implements display() + overrides quack()
+- **MallardDuck** - Standard duck (🦆)
+- **RedheadDuck** - Redhead duck (🦆)
+- **RubberDuck** - Squeaky rubber duck (🐥) - squeaks instead of quacks!
+- **DecoyDuck** - Silent wooden duck (🪵) - doesn't quack!
+
+## Animation Details
+- Ducks swim automatically using DispatcherTimer
+- Random quacking every 2-5 seconds
+- Smooth 30fps animation
+- Bounces off pond boundaries
